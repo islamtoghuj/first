@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Buildin"
-                pip install fire==0.4.0
+                sh 'pip install fire==0.4.0'
                 
             }
         }
