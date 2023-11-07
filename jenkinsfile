@@ -13,20 +13,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building this shit."
-                echo "doing build stuff.."
+                echo "Buildin"
+                pip install fire==0.4.0
                 
             }
         }
         stage('Test') {
             steps {
-                echo "Testing.."
-                echo "doing test stuff"
+                echo "Testin.."
+                python3 myapp
             }
         }
         stage('Deliver') {
             steps {
-                echo 'Deliver....'
+                echo 'Deliverin....'
                 echo "doing delivery stuff.."
                 
             }
